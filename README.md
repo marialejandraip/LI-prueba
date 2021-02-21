@@ -12,8 +12,6 @@
 * [x] Crear post con contenido de texto e imagen.
 * [x] Eliminar el post creado por el usuario.
 * [x] Mostrar el post creado con la imagen (/get).
-* [ ] Mantener los post creados
-* [ ] Ordenar por orden desc y asc de fecha. 
 
 ## Cómo ejecutar la web app.
 
