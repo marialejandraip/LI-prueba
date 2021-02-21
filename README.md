@@ -14,6 +14,12 @@
 * [x] Mostrar el post creado con la imagen (/get).
 * [ ] Mantener los post creados
 * [ ] Ordenar por orden desc y asc de fecha. 
+
+## Cómo ejecutar la web app.
+
+Instalar los paquetes que instalé con `npm install`. Solo es serve.
+
+Correr `npm start` que abrirá el local host http://localhost:5000 para verlo en el navegador.
  
 ## Herramientas utilizadas
 Vanilla Js, css, HTML. 
