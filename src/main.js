@@ -89,19 +89,22 @@ const renderTextnImage = (formData) => {
   deleteBtn.setAttribute('class', 'btn-delete')
 
   /* Publicar la imagen dentro del container del post */
-/*   const containerImage = document.createElement('img');
+  const containerImage = document.createElement('img');
   containerImage.setAttribute('src',file)
-  containerImage.setAttribute('class', 'image-post') */
+  containerImage.setAttribute('class', 'image-post')
 
   containerText.textContent = text
   containerDate.textContent = date
   deleteBtn.textContent ="Eliminar"
   containerUser.textContent = user
-  
+  containerImage.addEventListener('error', function()
+    {
+        containerSharedPost.removeChild(containerImage);
+    }, true);
   containerSharedPost.appendChild(containerUser)
   containerSharedPost.appendChild(containerDate)
   containerSharedPost.appendChild(containerText)
-  //containerSharedPost.appendChild(containerImage)
+  containerSharedPost.appendChild(containerImage)
   containerSharedPost.appendChild(deleteBtn)
 
   containerPost.appendChild(containerSharedPost)
@@ -111,14 +114,14 @@ const renderTextnImage = (formData) => {
   })
 }
 
-const renderImage=(formData)=>{
+/* const renderImage=(formData)=>{
   const image = formData.get('image')
   const file = URL.createObjectURL(image)
   const containerImage = document.createElement('img');
   containerImage.setAttribute('src',file)
   containerImage.setAttribute('class', 'image-post')
   containerSharedPost.appendChild(containerImage)
-}
+} */
 
 let data =[]
 form.addEventListener('submit',(e)=>{
@@ -128,7 +131,6 @@ form.addEventListener('submit',(e)=>{
   formData.set('id',Math.random())
   formData.set('user', user);
   renderTextnImage(formData)
-  renderImage(formData)
   data.push(localStorage.setItem('formData', JSON.stringify(Object.fromEntries(formData.entries())))) 
   modal.style.display = "none";
   containerImgModal.setAttribute('src',"")
