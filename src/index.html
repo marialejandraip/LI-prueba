@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Linkedin-Fake</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="search-logo">
+        <img src="./assets/linkedin.svg">
+        <div class="search-input">
+          <label>
+            <img src="./assets/Lupa.svg"/>
+            <input placeholder="Buscar"/>
+          </label>
+        </div>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <img src="./assets/home.webp"/>
+            <span>Inicio</span>
+          </li>
+          <li>
+            <img src="./assets/red.png"/>
+            <span>Mi red</span>
+          </li>
+          <li>
+            <img src="./assets/folder.png"/>
+            <span>Empleos</span>
+          </li>
+          <li>
+            <img src="./assets/message.png"/>
+            <span>Mensajes</span>
+          </li>
+          <li>
+            <img src="./assets/bell.webp"/>
+            <span>Notificaciones</span>
+          </li>
+          <li>
+            <img src="./assets/Nicolas.jfif">
+            <span>Yo</span>
+          </li>
+          <li>
+            <img src="./assets/products.svg">
+            <span>Productos</span>
+          </li>
+          <li>
+            <img src="./assets/publicidad.svg">
+            <span>Publicidad</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="left">
+      <div class="container-profile">
+        <div class="header-profile">
+          <div class="banner">
+            <img src="./assets/Nicolas.jfif" class="profile-pic"/>
+          </div>
+          <h3>Nicolás Rojas Nino</h3>
+          <h4>Ceo Imagine Apps</h4>
+        </div>
+        <table class="profile-table">
+          <tr>
+            <td>Quien ha visto tu perfil</td>
+            <td class="num">1325</td>
+          </tr>
+          <tr>
+            <td>Visualizacion de tus publicaciones</td>
+            <td class="num">973</td>
+          </tr>
+        </table>
+        <div class="marcapaginas">
+          Marcapáginas
+        </div>
+      </div>
+      <div class="container-mis-paginas">
+        <h3>Mis páginas (2)</h3>
+        <table class="pages-table">
+          <tr>
+            <td><img src="./assets/imagineApps.jfif"/></td>
+            <td>Imagine Apps</td>
+            <td class="num">6</td>
+          </tr>
+          <tr>
+            <td><img src="./assets//imagineApps.jfif"/></td>
+            <td>Imagine Desarrollo </td>
+            <td class="num">0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="container-recientes">
+
+      </div>
+    </section>
+    <section class="center">
+      <div class="container-create-post">
+        <button class="create">
+          <img src="./assets/writePost.png"/>
+          Crear Publicación</button>
+        <div class="button-post">
+          <button>Foto</button>
+          <button>Video</button>
+          <button>Evento</button>
+          <button>Articulo</button>
+        </div>
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="header-modal">
+              <h2>Crear Nueva Publicación</h2>
+              <span class="close">&times;</span>
+            </div>
+            <p>Nicolás Rojas Nino</p>
+            <form class="form-post">
+              <textarea class="text-post" name="textarea" rows="4" cols="50" placeholder="Sobre qué tema quieres publicar">
+              </textarea>
+              <img class="container-image"/>
+              <div class="bottom-modal">
+                <label class="file-label">
+                  <img src="./assets/fileImage.webp" />
+                  Agregar Imagen
+                  <input type="file" class="file-img" name="image"/>
+                </label>
+                <button class="btn-post">Publicar</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-select">
+        <select class="sort-select">
+          <option>Ordernar por:</option>
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
+        </select>
+      </div>
+
+      <div class="container-created-post">
+        <div class="post-container">
+          <h2 class="name"></h2>
+          <p class="date"></p>
+          <p class="text"></p>
+          <img src="./assets/imgPost.PNG"/>
+        </div>
+      </div>
+    </section>
+    <section class="rigth">
+      <div class="añadir-feed">
+        <h3>Añadir a tu feed</h3>
+        <div class="container-feed">
+          <img src="./assets/edna.jfif"/>
+          <div>
+            <h4>Edna Odette González Vázquez</h4>
+            <p>Directora editorial en EnergíaHoy</p>
+            <button>+ Seguir</button>
+          </div>
+        </div>
+
+        <div class="container-feed">
+          <img src="./assets/ElEspectador.png"/>
+          <div>
+            <h4>El Espectador</h4>
+            <p>Empresa - Servicio de información</p>
+            <button>+ Seguir</button>
+          </div>
+        </div>
+
+        <div class="container-feed">
+          <img src="./assets/Andres.jfif"/>
+          <div>
+            <h4>Andrés Conesa</h4>
+            <p>Chief Executive Officer Aeromexico</p>
+            <button>+ Seguir</button>
+          </div>
+        </div>
+        <span>Ver todas las recomendaciones</span>
+      </div>
+      <div class="cursos-mas-vistos">
+        <h4>Los cursos más vistos hoy</h4>
+        <div>
+          <ol>
+            <li value="1">
+              Cómo aumentar la reciliencia
+              <p>Tatiana Kolovou</p>
+            </li>
+            <li>
+              Navegar el cambio en tiempos dificiles
+              <p>Izanami Martinez</p>
+            </li>
+            <li>
+              Aprende a usar LinkedIn Learning
+              <P>Sara Ramadoro</P>
+            </li>
+          </ol>
+        </div>
+        <span>Ver más en linkedin Learning</span>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>

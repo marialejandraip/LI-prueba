@@ -1,0 +1,23 @@
+{
+  "name": "li-prueba",
+  "version": "1.0.0",
+  "description": "vanilla js project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marialejandraip/LI-prueba.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marialejandraip/LI-prueba/issues"
+  },
+  "homepage": "https://github.com/marialejandraip/LI-prueba#readme",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
